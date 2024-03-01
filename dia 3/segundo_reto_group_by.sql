@@ -11,6 +11,7 @@ SELECT staff_id,DATE(payment_date) AS only_date,
 COUNT(*) AS conteo_pagos, SUM(amount) AS total_amount FROM payment
 GROUP BY staff_id,only_date ORDER BY total_amount DESC;
 
+
 -- Segundo reto
 SELECT staff_id,DATE(payment_date) AS only_date,
 COUNT(*) AS conteo_pagos FROM payment
